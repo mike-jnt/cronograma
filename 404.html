@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Redirigiendo…</title>
+  <meta http-equiv="refresh" content="0; url=./index.html" />
+  <script>
+    (function(){
+      var target = './index.html';
+      var query = window.location.search || '';
+      var hash = window.location.hash || '';
+      window.location.replace(target + query + hash);
+    })();
+  </script>
+  <style>
+    body{font-family:system-ui,-apple-system,Segoe UI,Roboto,sans-serif;background:#08111f;color:#f4f7ff;display:grid;place-items:center;min-height:100vh;margin:0}
+    .box{padding:24px 20px;border:1px solid rgba(255,255,255,.12);border-radius:16px;background:rgba(255,255,255,.05);max-width:420px;text-align:center}
+    a{color:#7dd3fc}
+  </style>
+</head>
+<body>
+  <div class="box">
+    <h1>Abriendo la app…</h1>
+    <p>Si no redirige automáticamente, toca este enlace:</p>
+    <p><a href="./index.html">Abrir agenda</a></p>
+  </div>
+</body>
+</html>
